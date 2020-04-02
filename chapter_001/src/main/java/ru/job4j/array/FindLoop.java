@@ -16,7 +16,6 @@ public class FindLoop {
 
     public static int indexOf(int[] data, int el, int start, int finish) {
         int rst = -1; // если элемента нет в массиве, то возвращаем -1.
-        Assert.assertEquals(data.length - 1 >= finish && finish > start && start >= 0, true);
         for (int i = start; i <= finish; i++) {
             if (data[i] == el) {
                 rst = i;
