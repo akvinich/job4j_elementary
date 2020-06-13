@@ -1,7 +1,5 @@
 package ru.job4j.array;
 
-import org.junit.Assert;
-
 public class ArrayChar {
 
     public static boolean startsWith(char[] word, char[] pref) {
