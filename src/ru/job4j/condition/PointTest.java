@@ -8,11 +8,11 @@ public class PointTest {
 
     @Test
     public void distanceFirstTest() {
-        Assert.assertEquals(Point.distance(0, 0, 2, 0), 2, 0.01);
+        Assert.assertEquals(new Point(0, 0).distance(new Point(2, 0)), 2, 0.01);
     }
 
     @Test
     public void distanceSecondTest() {
-        Assert.assertEquals(Point.distance(-3, -4, 3, 4), 10, 0.01);
+        Assert.assertEquals(new Point(-3, -4).distance(new Point(3, 4)), 10, 0.01);
     }
 }
