@@ -9,7 +9,7 @@ public class Reduce {
 
     public void print() {
         for (int index : array) {
-            System.out.println(array[index]);
+            System.out.println(index);
         }
     }
 
