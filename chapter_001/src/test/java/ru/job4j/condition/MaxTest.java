@@ -22,4 +22,22 @@ public class MaxTest {
         int result = Max.max(4, 4);
         assertThat(result, is(4));
     }
+
+    @Test
+    public void whenMaxLeftFromThree() {
+        int result = Max.max(6, 4, 2);
+        assertThat(result, is(6));
+    }
+
+    @Test
+    public void whenMaxCenterFromThree() {
+        int result = Max.max(6, 8, 7);
+        assertThat(result, is(8));
+    }
+
+    @Test
+    public void whenMaxRightFromThree() {
+        int result = Max.max(6, 8, 10);
+        assertThat(result, is(10));
+    }
 }

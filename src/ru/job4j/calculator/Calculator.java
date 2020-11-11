@@ -7,10 +7,17 @@ package ru.job4j.calculator;
  */
 public class Calculator {
 
+    public double add(double first, double second) {
+        return first + second;
+    }
+
+    public double add(double first, double second, double third) {
+        return add(add(first, first), third);
+    }
+
     /**
      * Method main
      * @param args - input args
-     * @return nothing
      */
     public static void main(String[] args) {
         int one = 1;
