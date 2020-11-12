@@ -40,4 +40,28 @@ public class MaxTest {
         int result = Max.max(6, 8, 10);
         assertThat(result, is(10));
     }
+
+    @Test
+    public void whenMaxFirstFrom4() {
+        int result = Max.max(16, 8, 10, 1);
+        assertThat(result, is(16));
+    }
+
+    @Test
+    public void whenMaxSecondFrom4() {
+        int result = Max.max(16, 38, 10, 1);
+        assertThat(result, is(38));
+    }
+
+    @Test
+    public void whenMaxThirdFrom4() {
+        int result = Max.max(16, 38, 50, 1);
+        assertThat(result, is(50));
+    }
+
+    @Test
+    public void whenMaxLastFrom4() {
+        int result = Max.max(16, 38, 50, 111);
+        assertThat(result, is(111));
+    }
 }
